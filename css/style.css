@@ -100,13 +100,12 @@ h2 { font-size: var(--fs-h2)}
 h3 { font-size: var(--fs-h3)}
 
 .service__subheader {
-    text-decoration: none;
-    color: var(--clr-light)
+    color: var(--clr-accent);
+    text-decoration: underline;
 }
 
 .service__subheader:hover {
-    color: var(--clr-accent);
-    text-decoration: underline;
+    color: var(--clr-light);
 }
 
 .section__title {
