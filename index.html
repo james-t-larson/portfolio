@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+            crossorigin="anonymous" />  
+        <link 
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" 
+            rel="stylesheet">
+       <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#home"><img src="img/dev-timothy.png" alt=""></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+               Hello, I'm<strong>Timothy Larson</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">FRONT-END DEV</p>
+            <img src="img/profile.jpg" alt="A picture of me" class="intro__img">
+        </section>
+
+        <!-- Services -->
+       <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">Projects I've done</h2>
+            <div class="services">
+                <div class="service">
+                    <a href="./portfolio-item.html"><h3 class="service__subheader">Lorem</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                       nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="service">
+                    <a href="https://clone-bb577.firebaseapp.com/"><h3 class="service__subheader">E-commerce</h3></a>
+                    <p>This project is a simple e-commerce site. It is written in React and uses CSS for styling.
+                        At the moment is supports authentication, and a simple cart is working. The products at the home page 
+                        are hardcoded, but I plan to add a database to make it more dynamic so I can add functionality to the search
+                        bar as well. The aim of this site is to offer a simple template for this kind of site.
+                    </p>
+                </div>
+                <div class="service">
+                    <a href="https://zealous-dubinsky-a79fde.netlify.app/"><h3 class="service__subheader">Blog</h3></a>
+                    <p>This is a template for a blog. This template creates blog posts based on
+                        the number of markdown files in a specific directory. I utilized GatsbyJS, NodeJS, and SCSS
+                        for this project. The site pulls the filename to create a slug, and adds the title, 
+                        media and text content to the webpage. It requires more work as far as styling, 
+                        but at the moment I enjoy its simplicity.
+                    </p>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact</a>
+       </section>
+
+        <!-- About Me -->
+       <section class="about-me" id="about">
+           <h1 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">A developer intent on attention to detail</p>
+           <div class="about-me__body">
+               <h3>Bio:</h3>
+               <p>
+                    I started learning web development technologies while serving in 
+                    the United States Army. During a that time I was spending a month 
+                    out of the country followed by a month at home, in my time spent away I drove long i
+                    distances for weeks, and I was still able to find time to study front-end and some i
+                    back-end web development technologies. I was honerably dicharged in August 2020 and have started 
+                    to get my degree in Software Engineering where I have done 
+                    very well. I learn very quick and was hand picked by company leadership twice to 
+                    run high level operations in the military, and I spent the majority of my career 
+                    in those two positions.
+               </p>
+           </div>
+           <img src="img/portfolio-04.jpg" alt=""  class="about-me__img">
+       </section>
+
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <p>Contact Me</p>
+            <a href="mailto:timothy_james@tuto.io" class="footer__link">timothy_james@tuta.io</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a 
+                        href="https://www.linkedin.com/in/timothy-larson-999431194/" 
+                        class="social-list__link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://github.com/james-t-larson?tab=repositories" 
+                        class="social-list__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
