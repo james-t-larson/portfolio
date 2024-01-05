@@ -314,6 +314,10 @@ header {
     text-align: center;
 }
 
+.services-list {
+    padding-left: 0;
+}
+
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
